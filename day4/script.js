@@ -60,4 +60,46 @@ for(let i = 0; i<items.length; i++)
 
 console.log(items);
 */
+/*
+let items = ["potato","apple","litchi"];
+items.push("cips","fygs","gsjh");
+// items.pop();
+let deletedItem = items.pop();
+console.log(items);
+console.log("deleted",deletedItem);
+console.log(items.toString);
+console.log(items);
+*/
 
+/*
+let marvelHeros =["thor","spidermsn","ironman"];
+let dcHeroes = ["superman","batman"];
+let heroes = marvelHeros.concat(dcHeroes);
+console.log(heroes);
+*/
+/*
+let marvelHeros =["thor","spidermsn","ironman","ftuygk"];
+console.log(marvelHeros);
+console.log(marvelHeros.slice(1,3));
+*/
+
+/*
+let arr = [1,2,3,5,6,7,6,8,9];
+arr.splice(2,2,101,304);
+//add
+arr.splice(2,0,101);
+
+//delete
+arr.splice(3,1);
+
+//replace
+arr.splice(3,1,101);
+*/
+
+let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+console.log(companies);
+companies.shift();
+companies.splice(2,1); //delete
+companies.splice(2,1,"Ola");//add
+
+companies.push("Amazon");//last maa add
