@@ -74,4 +74,72 @@ let arr = [1,2,3,4,5];
 arr.forEach((num)=>{
  console.log(num*num); //square
 });
+
+let calcSquare = (num) =>{
+    console.log(num*num);
+}
 */
+/*
+//map
+let arr = [1,5,8,6,9,7,3];
+arr.map((val) => {
+    console.log(val);
+});
+*/
+/*
+let arr = [1,5,8,6,9,7,3];
+let newArr = arr.map((val) =>{
+    return val*val;
+});
+console.log(newArr);
+*/
+/*
+//filter
+let arr =[1,2,3,5,4,6,8,9];
+let evenArr = arr.filter((val) =>
+{
+   // return val%2 === 0;
+    return val > 3;
+});
+console.log(evenArr);
+*/
+
+/*
+//reduce
+let arr =[1,2,3,5,4,6,8,9];
+const val = arr.reduce((prev,curr) =>
+{
+    //return prev + curr;
+    return prev > curr ? prev:curr;
+});
+console.log(val);
+*/
+
+/*
+let marks = [87,95,69,99,98,25,45,75,92];
+let marksArr = marks.filter((score) =>
+{
+    return score > 90;
+});
+console.log(marksArr);
+*/
+
+let n = prompt("Enter a number");
+let arr =[];
+for (let i=0; i<=n; i++)
+    {
+        arr[i-1] = i;
+    }
+    console.log(arr);
+
+let sum = arr.reduce((prev,curr) =>
+{
+    return prev +curr;
+});
+console.log("sum=",sum);
+
+let mul = arr.reduce((prev,curr)=>
+{
+    return prev * curr ;
+});
+console.log("product=",mul);
